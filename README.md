@@ -1,3 +1,5 @@
 # Depth Buffer Visualization Unity
 
-![](visualization.png)
+Just add `DepthVisualization` behavior to your camera.
+
+<img src="visualization.png" width="500">
