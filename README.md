@@ -1,5 +1,5 @@
 # Depth Buffer Visualization Unity
 
-Just add `DepthVisualization` behavior to your camera.
+Click `Windows/Depth Visualization` or `Windows/Normal Visualization` to open
 
-<img src="visualization.png" width="500">
+<img src="visualization.png" width="600">

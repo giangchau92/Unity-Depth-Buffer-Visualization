@@ -2,23 +2,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 #if UNITY_EDITOR
 
 using UnityEditor;
 
-public class VisualizationWindows : EditorWindow {
+public class NormalVisualizationWindows : EditorWindow {
 
 	private Camera _camera;
 	private RenderTexture _renderTexture;
 	private int _screenWidth, _screenHeight;
 
-	[MenuItem ("Window/Depth Visualization")]
+	[MenuItem ("Window/Normal Visualization")]
 	public static void ShowWindows() {
-		EditorWindow.GetWindow<VisualizationWindows> ();
+		EditorWindow.GetWindow<NormalVisualizationWindows> ();
 	}
 
 	void Awake() {
-		DepthVisualization script = GameObject.FindObjectOfType<DepthVisualization> ();
+		NormalVisualization script = GameObject.FindObjectOfType<NormalVisualization> ();
 		_camera = script._camera;
 		if (_camera != null) {
 			_screenWidth = (int)position.width;
